@@ -1,0 +1,183 @@
+Intellipaat course
+
+cloud computing via internet
+
+ai driven use ai to prevent cyber or malicous attack and recoomend us to reduce cost
+
+Gcp products and services.
+
+categories:
+
+Networking
+
+storage
+
+compute
+
+Ai Big data
+
+IAM identity access management
+
+ECD project
+
+services associated in project
+
+My First Project default project created by google
+
+project id custom id also
+
+services accessing 2ways search, dashboard
+
+terminal to access services or do operations via commands
+
+gcloud sdk provided by google install, authenticate
+
+or
+
+cloud shell in gcp platform terminal
+
+cloud shell tiny virtual machine, storage 10gb shared memory
+
+editor to change configuration or code - IDE
+
+tiny vm -> storage, compute
+
+storage bucket stores files and data compute pooll of virtual machines
+
+whenever we start shell takes idle ym
+
+if we dont use shell for 30 days then storage bucket will be deleted
+
+IAM
+
+identity access management
+
+human/ device access/ permissions
+
+1. principal human level access management
+
+2. service account non human user level (device or application)
+
+adding principles
+
+Roles
+
+1)prirmitive/base level
+
+high level
+
+owner
+
+editor viewer browser
+
+2. derived roles
+
+service level
+
+vm-editor
+vm-owner etc
+
+3. custom roles
+
+combine two or more service roles
+
+add custom role to principle
+add custom role to principle
+
+create service acnt
+
+generally we dont give admin permissions to service acnt
+
+keys are important as passwordss
+
+create key save file
+
+after usage
+
+delete role, service acnt, keys
+
+networking IP protocol
+
+CIDR classles inter-domain routing its a subnet range to create dynamic ip addresses
+
+isp internet service provider
+
+ex:
+
+199.89.0.0
+
+if we need 256 ip addresses
+
+199.89.0.0/24 first 3 8bits are static last 8bits>0 255
+
+if we need 4
+
+199.89.0.0/30
+
+types of network
+
+LAN
+
+WAN
+
+MAN
+
+Ecp each data centers contain LAN and all of them connected through GCP private network and internet.
+
+all our services in a project are connected also using private network on cloud called as VPC virtual private cloud
+
+gcp project can contain multiple ypcs
+
+ECD have their own subnet range for each region
+
+region min 3 zones
+
+gcp - vpc
+
+private ip address we cant acces them from google or internet
+
+autonode vps creates subnet for every region in vpc
+
+custom mode vpc - not automatically we need to create subnet manually for necessary regions
+
+create vpc
+
+MTU maximum transmission unit / BAUD bits per second
+
+no of bits of packets / data transferred per second
+
+Dynamic routing
+
+1. global it will dynamically learn the shortest path btw src and dest, send the data
+
+2. regional it will jump from every region to region
+
+no coliision of ip address to other ypc ip address, because all private and no meaning outside the ypc
+
+create vpc auto, custom
+
+By default connectivity of vpc services from one vpc to another
+
+peering acts bridge btw two vpcs for connectivity (only two vpcs at a time one peering)
+
+Shared ypy one vpc in gcp project shared across multiple vpcs in another gcp projects main vpc in project- host project
+
+firewalls
+
+diff protocols used in diff use cases
+
+ex: smtp mails website http/s text file fttp
+
+firewall set of rules or acts a layer of security eliminates unauthorized or unwanted requests
+
+allows only authorized requests
+
+firewall policy--adding a set of rules
+
+firewall rule
+
+vpc level rules not services
+
+egress from ypc to outside (internet) request ingress from outside to урс anywhere 0.0.0.0/0 always trusted and allowed
+
+port no: I http 80, https 443
