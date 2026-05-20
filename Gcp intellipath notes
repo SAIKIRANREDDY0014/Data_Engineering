@@ -181,3 +181,5 @@ vpc level rules not services
 egress from ypc to outside (internet) request ingress from outside to урс anywhere 0.0.0.0/0 always trusted and allowed
 
 port no: I http 80, https 443
+
+delete all created services
