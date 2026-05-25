@@ -183,3 +183,45 @@ egress from ypc to outside (internet) request ingress from outside to урс any
 port no: I http 80, https 443
 
 delete all created services.
+
+
+
+
+App engine 
+code/application
+serverless
+
+open git hib repository in editor and path change in shell
+
+app.yaml file - contains all the information (must have file) if we need to deploy application in app engine 
+
+gcloud app deploy -- command in shell to deploy app  
+(google changed few services so no longer working in default service account)
+we cant deploy app through ui in app engine
+
+versions - if we change any code and deploy then it will create new version  
+we can send traffic to previous versions also 
+
+
+cloud run 
+container image
+serverless
+
+container image -- similar to custom image for vm 
+container image will be created using docker and it can be deployes anywhere  , more stable than app engine 
+it contains url
+create clod run service 
+
+cloud function 
+code
+serverless
+piece of code - single purpose task/application/function
+
+we will create function to run on cloud  
+use case : write a function  whenever user creates data into storage bucket needs to copy that data into another bucket 
+create cloud function - hello world 
+
+delete all services 
+
+
+
